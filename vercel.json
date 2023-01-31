@@ -1,0 +1,15 @@
+{
+  "routes": [
+    {
+      "src": "/",
+      "status": 308,
+      "headers": {
+        "Location": "https://store.armour-ac.co.uk/"
+      }
+    },
+    {
+      "src": "/log",
+      "dest": "/api/log.ts"
+    }
+  ]
+}
