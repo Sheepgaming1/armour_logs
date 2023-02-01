@@ -20,9 +20,9 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 			<img src="${msg.author.avatarURL}" style="float: left; width: 30px; height: 30px; border-radius: 50%;">
 		</div>
 		<div style="padding-left: 15px">
-			<h3 class="${msg.type}">${msg.author.username}#${msg.author.discriminator} - ${msg.type}</h3> <p> <i>${msg.timestamp} </i> </p>
+			<h3 class="${msg.type}">${msg.author.username}#${msg.author.discriminator} - ${msg.type}</h3> <p style="color:grey"> <i>${msg.timestamp} </i> </p>
 			<p class="content-text">${msg.content}</p>
-			${msg.originalContent ? `<br><p class="content-text"><b>Original Content: </b> ${msg.originalContent}</p>` : ''}
+			${msg.originalContent ? `<br><p class="content-text"> style=font-weight:"bold"><b>Original Content: </b>  ${msg.originalContent}</p>` : ''}
 			${msg.attachments && msg.attachments.length > 0 ? `
 			<div class="files">
 					${msg.attachments.map((f, v) => `<a href="${f}">Image ${v}</a>`).join(' ')}
@@ -35,7 +35,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 	res.send(`
 <html lang="en">
 <head>
-  	<title>${data.title || 'Thread Logs'}</title>
+  	<title>${data.title || 'Ticket Logs'}</title>
   	<meta charset="UTF-8">
   	<meta name="description" content="Log from ${data.recipient.username}.">
   	<link rel="icon" href="${data.recipient.avatarURL}" type="image/icon type">
@@ -43,18 +43,18 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #2C2F33
+            background-color: #27292b
         }
 
         .topnav {
             overflow: hidden;
-            background-color: #23272A;
+            background-color: #a10808;
             position: fixed;
             z-index: 1;
         }
 
         .topnav-title {
-            background-color: #99AAB5;
+            background-color: #aaba1c;
             overflow: hidden;
             width: 213px;
             float: left;
@@ -83,9 +83,25 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         }
 
         .topnav-links a:hover {
-            color: white;
+            color: black;
         }
-
+	
+        .topnav-img {
+            overflow: hidden;
+            float: fixed;
+        }
+	
+        .topnav-img a {
+            float: left;
+            text-align: center;
+            padding: 63px 63px;
+            text-decoration: none;
+            font-size: 20px;
+            color: #7289DA;
+        }
+	
+        .topnav-img a:hover {
+            color: black;
         .main {
             padding: 70px 20px;
             position: relative;
@@ -118,7 +134,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         }
         
         .STAFF_REPLY {
-        	color: forestgreen;
+        	color: yellow;
         	padding-left: 20px;
         }
         
@@ -142,13 +158,13 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 				}
 				
 				tr {
-					border-bottom: 2px solid white;
+					border-bottom: 2px solid black;
 				}
 				
 				.time {
 					width: 7%;
 					text-align: center;
-					color: #99AAB5;
+					color: #050505;
 					font-size: 13px;
 				}
     </style>
@@ -160,12 +176,16 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 
         <div class="topnav-title">
             <img src="${data.recipient.avatarURL}" style="float: left; width: 63px; height: 63px">
-            <p>${data.title || 'Thread Logs'}</p>
+            <p>${data.title || 'Ticket Logs'}</p>
         </div>
 
         <div class="topnav-links">
-            <a href="https://tickets.tlbrp.com/">Support Hub</a>
-            <a href="https://discord.gg/tlbrp">Discord Server</a>
+            <a href="https://store.armour-ac.co.uk">Armour Shop</a>
+            <a href="https://discord.gg/armourac">Discord Server</a>
+        </div>
+
+        <div class="topnav-img">
+	<img src="https://cdn.discordapp.com/attachments/838194502149341194/1063207738869547118/armour.gif" style="float: right; width: 63px; height: 63px">
         </div>
 
     </div>
