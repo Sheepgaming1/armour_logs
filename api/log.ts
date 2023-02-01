@@ -85,12 +85,11 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         .topnav-links a:hover {
             color: black;
         }
-	
         .topnav-img {
             overflow: hidden;
             float: fixed;
         }
-	
+
         .topnav-img a {
             float: left;
             text-align: center;
@@ -99,9 +98,11 @@ export default async (req: VercelRequest, res: VercelResponse) => {
             font-size: 20px;
             color: #7289DA;
         }
-	
+
         .topnav-img a:hover {
             color: black;
+        }
+
         .main {
             padding: 70px 20px;
             position: relative;
@@ -134,7 +135,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         }
         
         .STAFF_REPLY {
-        	color: yellow;
+        	color: forestgreen;
         	padding-left: 20px;
         }
         
@@ -183,7 +184,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
             <a href="https://store.armour-ac.co.uk">Armour Shop</a>
             <a href="https://discord.gg/armourac">Discord Server</a>
         </div>
-
+	
         <div class="topnav-img">
 	<img src="https://cdn.discordapp.com/attachments/838194502149341194/1063207738869547118/armour.gif" style="float: right; width: 63px; height: 63px">
         </div>
