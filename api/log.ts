@@ -48,13 +48,13 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 
         .topnav {
             overflow: hidden;
-            background-color: #aaba1c;
+            background-color: #e3ed51;
             position: fixed;
             z-index: 1;
         }
 
         .topnav-title {
-            background-color: #aaba1c;
+            background-color: #e3ed51;
             overflow: hidden;
             width: 213px;
             float: left;
