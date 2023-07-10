@@ -48,13 +48,13 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 
         .topnav {
             overflow: hidden;
-            background-color: #e3ed51;
+            background-color: #0778e3;
             position: fixed;
             z-index: 1;
         }
 
         .topnav-title {
-            background-color: #e3ed51;
+            background-color: #0778e3;
             overflow: hidden;
             width: 213px;
             float: left;
@@ -186,7 +186,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
         </div>
 	
         <div class="topnav-img">
-	<img src="https://cdn.discordapp.com/attachments/838194502149341194/1063207738869547118/armour.gif" style="float: right; width: 63px; height: 63px">
+	<img src="https://media.discordapp.net/attachments/900929022312198166/1126516176764272761/discord.png?width=809&height=809" style="float: right; width: 63px; height: 63px">
         </div>
 
     </div>
