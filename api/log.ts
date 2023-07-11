@@ -79,7 +79,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
             padding: 20px 16px;
             text-decoration: none;
             font-size: 20px;
-            color: #7289DA;
+            color: #000000;
         }
 
         .topnav-links a:hover {
