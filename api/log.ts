@@ -182,7 +182,7 @@ export default async (req: VercelRequest, res: VercelResponse) => {
 
         <div class="topnav-links">
             <a href="https://portal.armour-hosting.com/index.php?rp=/store/discord-bots">Purchase Bot</a>
-            <a href="https://discord.gg/armourac">Discord Server</a>
+            <a href="https://discord.gg/armour">Discord Server</a>
         </div>
 	
         <div class="topnav-img">
